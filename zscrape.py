@@ -53,7 +53,7 @@ def scrape(what, where):
     site = requests.get(url + query)
     whole_page = BeautifulSoup(site.text, "html.parser")
     total_vacancies = whole_page.find(id="searchCountPages")
-    total_vacancies = int(total_vacancies.string.split()[3])
+    total_vacancies = int(total_vacancies.string.split()[3].replace(',', ''))
 
     print("Scraping ~" + str(total_vacancies) + " vacancies for '" + what + "' in '" + where + "'...")
     vacancies = []
