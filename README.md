@@ -6,13 +6,13 @@ Command line tool to scrape job listings from Indeed.co.uk, optionally geocode w
 
 1. Optional: if geocoding is required, set environmental variable API_KEY to your [Google Maps credential](https://cloud.google.com/maps-platform/) by running `export API_KEY=yourGoogleMapsAPIkeyhere`.
 
-2. `python scrapy.py --what "developer" --where "Bristol"` (add `-g` flag if geocoding).
+2. `python jobscrapy.py --what "developer" --where "Bristol"` (add `-g` flag if geocoding).
 
 This results in:
 
-![Screeshot showing command line use.](https://raw.githubusercontent.com/zackads/jobscrapy/master/static/screenshot1.png)
+![Screenshot showing command line use.](https://raw.githubusercontent.com/zackads/jobscrapy/master/static/screenshot1.png)
 
-The output .json data schema looks like this: (not a real job ad)
+The output .json data schema looks like this: _(not a real job ad)_
 
 ```json
 {
@@ -48,7 +48,7 @@ Happy job hunting!
 ## To-do
 
 - Allow user to select different output formats (e.g. CSV).
-- Allow user to select locale. (Current default of Indeed.co.uk doesn't work with 'where's outside the UK, e.g. where = 'Scan Francisco').
+- Allow user to select locale. (Current default of Indeed.co.uk doesn't work with 'where's outside the UK, e.g. where = 'San Francisco').
 - ✅ ~~Make geocoding optional by adding a new arg.~~
 - ✅ ~~Combine three progress bars in to one.~~
 - ✅ ~~Refactor in OOP by creating classes + methods.~~
