@@ -10,8 +10,8 @@ Command line tool to scrape job listings from Indeed.co.uk, optionally geocode w
 
 ## To-do:
 
-- Allow user to select different output formats (e.g. CSV);
-- Allow user to select locale. (Current default of Indeed.co.uk doesn't work with 'where's outside the UK, e.g. where = 'Scan Francisco');
-- ~~Make geocoding optional by adding a new arg;~~
-- ~~Combine three progress bars in to one single progress bar to rule them all;~~
-- ~~Refactor in OOP to make Uncle Bob happy by creating a classes + methods.~~
+- Allow user to select different output formats (e.g. CSV).
+- Allow user to select locale. (Current default of Indeed.co.uk doesn't work with 'where's outside the UK, e.g. where = 'Scan Francisco').
+- ✅ ~~Make geocoding optional by adding a new arg.~~
+- ✅ ~~Combine three progress bars in to one.~~
+- ✅ ~~Refactor in OOP by creating classes + methods.~~
