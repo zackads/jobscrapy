@@ -39,7 +39,7 @@ def main(args):
         else:
             filename_metadata = now.strftime("%Y%m%d") + "_" + args.what + "_" + args.where 
             filename = writeJsonToFile(data, filename_metadata)
-            print(f"Success! Job vacancy data written to {filename}.  Thank you for using JobScraper.")
+            print(f"Success! Job vacancy data written to {filename}.  Thank you for using jobscrapy.")
 
     except OSError as err:
         print ("Looks like something went wrong with the file operation...")
