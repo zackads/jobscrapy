@@ -22,7 +22,7 @@ import geopy
 
 def main(args):
     try:
-        print(f"Scraping job vacancies for '{args.what}' in '{args.where}'...")
+        print(f"Scraping {getTotalResultCount(args.what, args.where)} job vacancies for '{args.what}' in '{args.where}'...")
 
         now = datetime.datetime.now()
         data = {
@@ -34,8 +34,6 @@ def main(args):
 
         if len(data['content']) == 0:
             print("No jobs found.  Try searching for a more general 'what' or a more specific 'where'.")
-            print(f"'{args.where} may be too broad.  Is it a city or postcode?")
-            print(f"There may genuinely be no '{args.what}' jobs out there... Sorry.")
         else:
             filename_metadata = now.strftime("%Y%m%d") + "_" + args.what + "_" + args.where 
             filename = writeJsonToFile(data, filename_metadata)
