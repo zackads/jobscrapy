@@ -41,7 +41,7 @@ The output .json data schema looks like this: (not a real job ad)
 
 You can use the resulting .json file to work with the data, such as by using the [Plotly](https://plotly.com/python/) library to create visualisations:
 
-![Screenshot showing a bubble map using job vacancy location and salary data, created with the Python library Plotly.](https://raw.githubusercontent.com/zackads/jobscrapy/master/static/screenshot3.png)
+![Screenshot showing a bubble map using job vacancy location and salary data, created with the Python library Plotly.](https://raw.githubusercontent.com/zackads/jobscrapy/master/static/screenshot2.png)
 
 Happy job hunting!
 
