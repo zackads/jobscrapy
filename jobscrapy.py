@@ -274,8 +274,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description = 'A web scraper for Indeed.com.')
 
     # Required positional argument
-    parser.add_argument("--what", help="String to search for.  E.g., 'Python developer'")
-    parser.add_argument("--where", help="City or location to sarch in.  E.g. 'London'")
+    parser.add_argument("what", help="String to search for.  E.g., 'Python developer'")
+    parser.add_argument("where", help="City or location to sarch in.  E.g. 'London'")
 
     # Optional argument flag which defaults to False
     parser.add_argument("-g", "--geocode", action="store_true", default=False, help="Attempt to find location of job vacancy by company name, location and city.  Requires environmental variable 'API_KEY' to be set to a Google Maps credential.")

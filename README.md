@@ -4,15 +4,38 @@ Command line tool to scrape job listings from Indeed.co.uk, optionally geocode w
 
 ## Usage
 
-1. Optional: if geocoding is required, set environmental variable API_KEY to your [Google Maps credential](https://cloud.google.com/maps-platform/) by running `export API_KEY=yourGoogleMapsAPIkeyhere`.
+```bash
+jobscrapy.py [-h] [-g] [-v] [--version] what where
+```
 
-2. `python jobscrapy.py --what "developer" --where "Bristol"` (add `-g` flag if geocoding).
+The 'what' argument is the job title, category or keyword (tinker, tailor, soldier, sailor...) and 'where' is the location to be searched (a city or postcode).
+
+'-g' is an optional flag to tell jobscrapy to attempt to geocode (get the latitude and longitude) of each job vacancy. This is useful for plotting job vacancies on a map or calculating travel distance. If geocoding is required, set environmental variable API_KEY to your [Google Maps credential](https://cloud.google.com/maps-platform/) by running `export API_KEY=yourGoogleMapsAPIkeyhere`.
+
+## Examples
+
+```
+python jobscrapy.py developer Bristol
+```
+
+or
+
+```bash
+python jobscrapy.py 'python developer' Manchester
+```
+
+or
+
+```bash
+export API_KEY=yourGoogleMapsAPIkeyhere
+python jobscrapy.py developer 'Ashby de la Zouch' -g`
+```
 
 This results in:
 
 ![Screenshot showing command line use.](https://raw.githubusercontent.com/zackads/jobscrapy/master/static/screenshot1.png)
 
-The output .json data schema looks like this: _(not a real job ad)_
+The output .json data schema looks like this: (not a real job ad)
 
 ```json
 {
