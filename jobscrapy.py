@@ -3,6 +3,11 @@
 jobscrapy: scrape job listings from Indeed.com, optionally geocode and output to a .json file.
 """
 
+"""
+To-do: 
+    [ ] Change functions in to methods of classes.
+    [ ] Remove side effects from functions/classes.
+"""
 __author__ = "Zack Adlington (github.com/zackads)"
 __version__ = "0.1.0"
 __license__ = "MIT"
@@ -22,7 +27,8 @@ import geopy
 
 def main(args):
     try:
-        print(f"Scraping {getTotalResultCount(args.what, args.where)} job vacancies for '{args.what}' in '{args.where}'...")
+        first_results_page = ResultsPage(0, args.what, args.where)
+        print(f"Scraping {first_results_page.getTotalResultCount()} job vacancies for '{args.what}' in '{args.where}'...")
 
         now = datetime.datetime.now()
         data = {
@@ -52,22 +58,12 @@ def main(args):
         print("Unexpected error.")
         raise SystemExit(err)
 
-def getTotalResultCount(what, where):
-    '''Return int of total number of results'''
-    first_results_page = ResultsPage(0, what, where)
-    total_result_count = first_results_page.DOM.find(id="searchCountPages")
-
-    if total_result_count == None:
-        total_result_count = 0
-    else:
-        total_result_count = int(total_result_count.string.split()[3].replace(',', ''))
-
-    return total_result_count
-
 def scrapeAllJobAds(what, where):
     '''Returns list of JobAd dictionaries scraped from Indeed for given args'''
     job_ads = []
-    total_job_count = getTotalResultCount(what, where)
+    first_results_page = ResultsPage(0, what, where)
+
+    total_job_count = first_results_page.getTotalResultCount()
 
     with tqdm(total = total_job_count) as progress_bar:
         page_counter = 0
@@ -118,6 +114,17 @@ class ResultsPage():
     def getResultElements(self, results_page):
         '''Returns iterable of individual result elements from results page'''
         return results_page.find_all(name="div", attrs={"class":"jobsearch-SerpJobCard"})
+
+    def getTotalResultCount(self):
+        '''Return int of total number of results'''
+        total_result_count = self.DOM.find(id="searchCountPages")
+
+        if total_result_count == None:
+            total_result_count = 0
+        else:
+            total_result_count = int(total_result_count.string.split()[3].replace(',', ''))
+
+        return total_result_count   
 
 class JobAd():
     def __init__(self, result_element, what, where):
@@ -207,14 +214,10 @@ class JobAd():
         for link in result_element.find_all(attrs={"class":"title"}):
             return str(URL + str(link.a.get("href")))
 
-    def getDescription(self, detail_url):
-        details = requests.get(detail_url)
-        description = BeautifulSoup(details.text, "html.parser")
-
-        for blurb in description.find_all(attrs={"id":"jobDescriptionText"}):
-            job_description = str(blurb.contents).replace('"','\\\"')
-            job_description = job_description.replace("'", "\\\'")
-            return job_description
+    def getDescription(self, url):
+        description_page = requests.get(url)
+        description_page = BeautifulSoup(description_page.text, "html.parser")
+        return description_page.find(id='jobDescriptionText').get_text()
 
     @retry(wait_exponential_multiplier=1000, wait_exponential_max=60000)
     def geocodeLocation(self):
