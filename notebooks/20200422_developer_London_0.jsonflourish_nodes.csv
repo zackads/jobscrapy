@@ -1,0 +1,89 @@
+technology,occurrences,category,subcategory,median_salary
+,2872,languages,javascript,35000
+,2195,languages,html_css,35000
+,441,languages,sql,47500
+,1223,languages,python,38018
+,1526,languages,java,38018
+,0,languages,bash,No vacancies advertised a salary.
+,473,languages,shell,38018
+,26,languages,powershell,62500
+,605,languages,c#,47500
+,1110,languages,php,32500
+,759,languages,c++,34000
+,130,languages,typescript,65000
+,387,languages,c,39853
+,321,languages,ruby,38018
+,1534,languages,go,67500
+,6,languages,assembly,No vacancies advertised a salary.
+,615,languages,swift,No vacancies advertised a salary.
+,0,languages,kotlin,No vacancies advertised a salary.
+,245,languages,r,35000
+,150,languages,vba,No vacancies advertised a salary.
+,504,languages,objective-c,No vacancies advertised a salary.
+,0,languages,scala,No vacancies advertised a salary.
+,6,languages,rust,No vacancies advertised a salary.
+,0,languages,dart,No vacancies advertised a salary.
+,0,languages,elixir,No vacancies advertised a salary.
+,0,languages,clojure,No vacancies advertised a salary.
+,0,languages,webassembly,No vacancies advertised a salary.
+,790,frameworks,jquery,23499
+,1183,frameworks,react,23499
+,540,frameworks,angular,32500
+,0,frameworks,asp.net,No vacancies advertised a salary.
+,156,frameworks,asp,62500
+,23,frameworks,express,72500
+,22,frameworks,spring,40000
+,237,frameworks,vue.js,55000
+,0,frameworks,django,No vacancies advertised a salary.
+,77,frameworks,flask,40000
+,121,frameworks,laravel,35742
+,1,frameworks,ruby on rails,75000
+,63,frameworks,drupal,No vacancies advertised a salary.
+,148,platforms,linux,40000
+,292,platforms,windows,32500
+,315,platforms,docker,40000
+,430,platforms,android,50000
+,190,platforms,aws,65000
+,0,platforms,macos,No vacancies advertised a salary.
+,0,platforms,slack,No vacancies advertised a salary.
+,0,platforms,raspberry pi,No vacancies advertised a salary.
+,356,platforms,wordpress,22500
+,386,platforms,ios,50000
+,125,platforms,google cloud platform,35742
+,26,platforms,azure,62500
+,0,platforms,arduino,No vacancies advertised a salary.
+,0,platforms,heroku,No vacancies advertised a salary.
+,14,platforms,kubernetes,40000
+,0,platforms,ibm cloud,No vacancies advertised a salary.
+,0,platforms,watson,No vacancies advertised a salary.
+,578,databases,mysql,32500
+,67,databases,postgresql,40000
+,291,databases,sql server,62500
+,0,databases,sqlite,No vacancies advertised a salary.
+,0,databases,mongodb,No vacancies advertised a salary.
+,0,databases,redis,No vacancies advertised a salary.
+,0,databases,mariadb,No vacancies advertised a salary.
+,29,databases,oracle,65000
+,126,databases,elasticsearch,40000
+,0,databases,firebase,No vacancies advertised a salary.
+,20,databases,dynamodb,No vacancies advertised a salary.
+,0,databases,cassandra,No vacancies advertised a salary.
+,0,databases,couchbase,No vacancies advertised a salary.
+,1059,others,node.js,35000
+,0,others,.net,No vacancies advertised a salary.
+,0,others,.net core,No vacancies advertised a salary.
+,0,others,pandas,No vacancies advertised a salary.
+,0,others,unity 3d,No vacancies advertised a salary.
+,0,others,react native,No vacancies advertised a salary.
+,0,others,tensorflow,No vacancies advertised a salary.
+,11,others,ansible,No vacancies advertised a salary.
+,0,others,cordova,No vacancies advertised a salary.
+,0,others,xamarin,No vacancies advertised a salary.
+,0,others,apache spark,No vacancies advertised a salary.
+,99,others,hadoop,No vacancies advertised a salary.
+,32,others,unreal engine,34000
+,0,others,flutter,No vacancies advertised a salary.
+,0,others,torch/pytorch,No vacancies advertised a salary.
+,11,others,puppet,No vacancies advertised a salary.
+,0,others,chef,No vacancies advertised a salary.
+,0,others,cryengine,No vacancies advertised a salary.

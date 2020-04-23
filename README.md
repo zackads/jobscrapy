@@ -73,3 +73,10 @@ Happy job hunting!
 - ✅ ~~Make geocoding optional by adding a new arg.~~
 - ✅ ~~Combine three progress bars in to one.~~
 - ✅ ~~Refactor in OOP by creating classes + methods.~~
+
+## Under the hood
+
+Classes
+
+- ResultsPage()
+- JobAd()

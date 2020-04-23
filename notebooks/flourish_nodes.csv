@@ -1,0 +1,89 @@
+technology,occurrences,category,subcategory,median_salary
+,119,languages,javascript,35000
+,145,languages,html_css,40000
+,47,languages,sql,40000
+,42,languages,python,No vacancies advertised a salary.
+,53,languages,java,No vacancies advertised a salary.
+,22,languages,bash,No vacancies advertised a salary.
+,0,languages,shell,No vacancies advertised a salary.
+,0,languages,powershell,No vacancies advertised a salary.
+,49,languages,c#,35000
+,102,languages,php,40000
+,15,languages,c++,No vacancies advertised a salary.
+,3,languages,typescript,55000
+,11,languages,c,No vacancies advertised a salary.
+,0,languages,ruby,No vacancies advertised a salary.
+,32,languages,go,40000
+,0,languages,assembly,No vacancies advertised a salary.
+,0,languages,swift,No vacancies advertised a salary.
+,0,languages,kotlin,No vacancies advertised a salary.
+,0,languages,r,No vacancies advertised a salary.
+,0,languages,vba,No vacancies advertised a salary.
+,0,languages,objective-c,No vacancies advertised a salary.
+,0,languages,scala,No vacancies advertised a salary.
+,0,languages,rust,No vacancies advertised a salary.
+,0,languages,dart,No vacancies advertised a salary.
+,0,languages,elixir,No vacancies advertised a salary.
+,0,languages,clojure,No vacancies advertised a salary.
+,0,languages,webassembly,No vacancies advertised a salary.
+,4,frameworks,jquery,40000
+,54,frameworks,react,40000
+,46,frameworks,angular,37500
+,0,frameworks,asp.net,No vacancies advertised a salary.
+,35,frameworks,asp,35000
+,2,frameworks,express,55000
+,1,frameworks,spring,No vacancies advertised a salary.
+,47,frameworks,vue.js,40000
+,0,frameworks,django,No vacancies advertised a salary.
+,0,frameworks,flask,No vacancies advertised a salary.
+,23,frameworks,laravel,40000
+,0,frameworks,ruby on rails,No vacancies advertised a salary.
+,0,frameworks,drupal,No vacancies advertised a salary.
+,33,platforms,linux,No vacancies advertised a salary.
+,33,platforms,windows,No vacancies advertised a salary.
+,0,platforms,docker,No vacancies advertised a salary.
+,0,platforms,android,No vacancies advertised a salary.
+,23,platforms,aws,40000
+,22,platforms,macos,No vacancies advertised a salary.
+,0,platforms,slack,No vacancies advertised a salary.
+,0,platforms,raspberry pi,No vacancies advertised a salary.
+,27,platforms,wordpress,40000
+,0,platforms,ios,No vacancies advertised a salary.
+,0,platforms,google cloud platform,No vacancies advertised a salary.
+,33,platforms,azure,35000
+,0,platforms,arduino,No vacancies advertised a salary.
+,0,platforms,heroku,No vacancies advertised a salary.
+,0,platforms,kubernetes,No vacancies advertised a salary.
+,0,platforms,ibm cloud,No vacancies advertised a salary.
+,0,platforms,watson,No vacancies advertised a salary.
+,45,databases,mysql,No vacancies advertised a salary.
+,0,databases,postgresql,No vacancies advertised a salary.
+,25,databases,sql server,35000
+,22,databases,sqlite,No vacancies advertised a salary.
+,2,databases,mongodb,55000
+,0,databases,redis,No vacancies advertised a salary.
+,0,databases,mariadb,No vacancies advertised a salary.
+,11,databases,oracle,No vacancies advertised a salary.
+,0,databases,elasticsearch,No vacancies advertised a salary.
+,0,databases,firebase,No vacancies advertised a salary.
+,0,databases,dynamodb,No vacancies advertised a salary.
+,0,databases,cassandra,No vacancies advertised a salary.
+,0,databases,couchbase,No vacancies advertised a salary.
+,25,others,node.js,35000
+,0,others,.net,No vacancies advertised a salary.
+,0,others,.net core,No vacancies advertised a salary.
+,0,others,pandas,No vacancies advertised a salary.
+,0,others,unity 3d,No vacancies advertised a salary.
+,0,others,react native,No vacancies advertised a salary.
+,0,others,tensorflow,No vacancies advertised a salary.
+,0,others,ansible,No vacancies advertised a salary.
+,0,others,cordova,No vacancies advertised a salary.
+,0,others,xamarin,No vacancies advertised a salary.
+,0,others,apache spark,No vacancies advertised a salary.
+,0,others,hadoop,No vacancies advertised a salary.
+,0,others,unreal engine,No vacancies advertised a salary.
+,0,others,flutter,No vacancies advertised a salary.
+,0,others,torch/pytorch,No vacancies advertised a salary.
+,0,others,puppet,No vacancies advertised a salary.
+,0,others,chef,No vacancies advertised a salary.
+,0,others,cryengine,No vacancies advertised a salary.

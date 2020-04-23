@@ -217,7 +217,7 @@ class JobAd():
     def getDescription(self, url):
         description_page = requests.get(url)
         description_page = BeautifulSoup(description_page.text, "html.parser")
-        return description_page.find(id='jobDescriptionText').get_text()
+        return description_page.find(id='jobDescriptionText').get_text(" ")
 
     @retry(wait_exponential_multiplier=1000, wait_exponential_max=60000)
     def geocodeLocation(self):
