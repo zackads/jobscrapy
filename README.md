@@ -5,7 +5,7 @@ Command line tool to scrape job listings from Indeed.co.uk, optionally geocode w
 ## Usage
 
 ```bash
-jobscrapy.py [-h] [-g] [-v] [--version] what where
+python jobscrapy.py [-h] [-g] [-v] [--version] what where
 ```
 
 The 'what' argument is the job title, category or keyword (tinker, tailor, soldier, sailor...) and 'where' is the location to be searched (a city or postcode).
